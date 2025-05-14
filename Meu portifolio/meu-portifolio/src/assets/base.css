@@ -1,4 +1,13 @@
-/* color palette from <https://github.com/vuejs/theme> */
-:root {
-}
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+:root {
+    font-family: "Share Tech", sans-serif;
+
+    --color_1: #042940;
+    --color_2: #005C53;
+    --color_3: #9FC131;
+    --color_4: #DBF227;
+    --color_5: #D6D58E;
+
+    --gradient_1: linear-gradient(90deg, var(--color_1), var(--color_2));
+}

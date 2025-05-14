@@ -3,9 +3,9 @@
 </script>
 
 <template>
-    <header>
+    <header class="d-flex">
         <aside>
-            <img src="/icon sem fundo.png" alt="Logo <LG/ >">
+            <h1>&lt;LG /&gt;</h1>
         </aside>
         <h1></h1>
         <ul>
@@ -16,12 +16,12 @@
 </template>
 
 <style lang="scss" scoped>
-header{
+header {
     background: var(--gradient_1);
 
-    img {
-        height: 100px;
-        width: 100px;
+    aside {
+        font-family: "Share Tech", sans-serif;
+        font-size: 2.5em;
     }
 }
 </style>

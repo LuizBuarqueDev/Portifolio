@@ -20,7 +20,7 @@
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
-                <li class="mx-3">
+        <li class="mx-3">
           <a href="#" target="_blank" rel="noopener" aria-label="Linkedin">
             <i class="fa-brands fa-linkedin"></i>
           </a>
@@ -43,16 +43,17 @@ footer {
   width: 100%;
   background-color: var(--color_2);
 
-  a {
-    color: var(--color_5);
+  a,
+  div {
     text-decoration: none;
+    color: var(--color_5);
 
     &:hover {
       color: var(--color_5_hover);
     }
 
     i {
-        font-size: 1.5em;
+      font-size: 1.5em;
     }
   }
 }

@@ -10,5 +10,12 @@
     --color_4: #DBF227;
     --color_5: #D6D58E;
 
+    --color_1_hover: #022534;
+    --color_2_hover: #023b47;
+    --color_3_hover: #8aa92b;
+    --color_4_hover: #c2d61f;
+    --color_5_hover: #bfbf7e;
+
+
     --gradient_1: linear-gradient(90deg, var(--color_1), var(--color_2));
 }

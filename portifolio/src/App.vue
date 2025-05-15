@@ -9,7 +9,6 @@ import Json from '@/components/Json.vue';
 <template>
   <Header/>
   <RouterView />
-  <Json/>
   <Footer/>
 </template>
 

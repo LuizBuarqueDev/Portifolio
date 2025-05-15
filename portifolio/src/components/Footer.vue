@@ -4,7 +4,6 @@
 <template>
   <footer class="text-white py-5">
     <div class="container text-center">
-      <!-- Ícones em linha, centrados -->
       <ul class="list-unstyled d-flex justify-content-center mb-3">
         <li class="mx-3">
           <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
@@ -21,9 +20,13 @@
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
+                <li class="mx-3">
+          <a href="#" target="_blank" rel="noopener" aria-label="Linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
       </ul>
 
-      <!-- Informações embaixo -->
       <div>
         <div>Email: <a href="mailto:luizgabrielbuarque@gmail.com">luizgabrielbuarque@gmail.com</a></div>
         <div>Telefone: <a href="tel:+5581996346840">(81) 99634-6840</a></div>
@@ -35,7 +38,6 @@
 
 <style lang="scss" scoped>
 footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;

@@ -39,43 +39,48 @@ export default {
         // Null
         .replace(/:\s*null/g, ': <span class="json-null">null</span>');
 
-      // Retorna dentro de <pre> para manter identação
       return `<pre>${escaped}</pre>`;
     }
   }
 };
 </script>
 
-<style>
+<style lang="scss">
+
 .json-container {
-  background-color: #1e1e1e;
+  border: solid var(--color_5) 2px;
+  background-color: var(--color_2);
   padding: 1rem;
   border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 2rem;
+  font-size: 1.3rem;
   overflow-x: auto;
   color: #ffffff;
   white-space: pre-wrap;
+  display: inline-block;
+
+  pre {
+    margin: 0;
+  }
 }
 
-/* Cores por tipo */
 .json-key {
-  color: #9cdcfe; /* azul claro */
+  color: #9cdcfe;
 }
 
 .json-string {
-  color: #ce9178; /* rosa salmão */
+  color: #ce9178;
 }
 
 .json-number {
-  color: #b5cea8; /* verde claro */
+  color: #b5cea8;
 }
 
 .json-boolean {
-  color: #569cd6; /* azul médio */
+  color: #569cd6;
 }
 
 .json-null {
-  color: #dcdcaa; /* amarelo claro */
+  color: #dcdcaa;
 }
 </style>

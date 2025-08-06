@@ -1,11 +1,38 @@
 @import "tailwindcss";
 @import "./base.css";
 
-body {
-    background-color: var(--color-1);
-}
-
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--color-1);
+}
+
+
+.bg-img-section {
+  background-image: url('../../../public/imgs/STScI-01H1Q2VFHVMAJGH4WRNMK0DY2.png');
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* escurecimento */
+    z-index: -1;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 1s steps(2, start) infinite;
+}
+

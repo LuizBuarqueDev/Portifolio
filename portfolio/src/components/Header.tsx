@@ -3,7 +3,7 @@ export const Header = () => {
     <header className="flex justify-between items-center p-4 text-white">
       <h1 className="text-2xl font-bold">@LuizBuarqueDev</h1>
       <nav>
-        <ul className="flex gap-10 items-center [&_li]:transition-transform [&_li]:hover:scale-110">
+        <ul className="flex gap-10 items-center [&_li]:transition-transform [&_li]:hover:scale-110 [&_li]:hover:border-b-2 [&_li]:hover:border-white">
           <li>
             <a href="https://github.com/LuizBuarqueDev" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-github"></i> Github

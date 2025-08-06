@@ -2,24 +2,24 @@ export const Footer = () => {
     return (
         <footer className="flex justify-center items-center p-4 text-white">
             <div className="text-center mx-auto">
-                <ul className="list-none flex justify-center mb-3">
+                <ul className="list-none flex justify-center mb-3 [&_li]:transition-transform [&_li]:hover:scale-110">
                     <li className="mx-3">
                         <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
                             <i className="fa-brands fa-facebook"></i>
                         </a>
                     </li>
                     <li className="mx-3">
-                        <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                        <a href="https://www.instagram.com/luiz_gabr1el/" target="_blank" rel="noopener" aria-label="Instagram">
                             <i className="fa-brands fa-instagram"></i>
                         </a>
                     </li>
                     <li className="mx-3">
-                        <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                        <a href="https://github.com/LuizBuarqueDev" target="_blank" rel="noopener" aria-label="GitHub">
                             <i className="fa-brands fa-github"></i>
                         </a>
                     </li>
                     <li className="mx-3">
-                        <a href="#" target="_blank" rel="noopener" aria-label="Linkedin">
+                        <a href="https://www.linkedin.com/in/luiz-gabriel-buarque-vasconcelos-24074328b/" target="_blank" rel="noopener" aria-label="Linkedin">
                             <i className="fa-brands fa-linkedin"></i>
                         </a>
                     </li>

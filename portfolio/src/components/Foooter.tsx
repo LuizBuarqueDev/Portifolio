@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
-        <footer className="flex justify-center items-center p-4 text-white bg-gray-800">
-            <div className="container text-center mx-auto">
+        <footer className="flex justify-center items-center p-4 text-white">
+            <div className="text-center mx-auto">
                 <ul className="list-none flex justify-center mb-3">
                     <li className="mx-3">
                         <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
@@ -28,13 +28,13 @@ export const Footer = () => {
                 <div>
                     <div>
                         Email:{" "}
-                        <a href="mailto:luizgabrielbuarque@gmail.com" className="text-blue-500 hover:underline">
+                        <a href="mailto:luizgabrielbuarque@gmail.com">
                             luizgabrielbuarque@gmail.com
                         </a>
                     </div>
                     <div>
                         Telefone:{" "}
-                        <a href="tel:+5581996346840" className="text-blue-500 hover:underline">
+                        <a href="tel:+5581996346840">
                             (81) 99634-6840
                         </a>
                     </div>

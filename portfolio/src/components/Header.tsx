@@ -1,17 +1,17 @@
-import './header.css';
-export default function Header() {
+import '@/app/styles/components/header.css';
+
+export const Header = () => {
   return (
     <header className="flex justify-between items-center p-4 text-white">
       <h1 className="text-2xl font-bold">@LuizBuarqueDev</h1>
-      <nav><i className="fa-solid fa-user"></i>
-
+      <nav>
         <ul className="flex gap-10 items-center">
           <li>
             <a href="https://github.com/LuizBuarqueDev" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-github"></i> Github
             </a>
           </li>
-          <li><i className="fa-regular fa-user"></i>
+          <li>
 
             <a href="https://www.linkedin.com/in/luiz-gabriel-buarque-vasconcelos-24074328b/" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin"></i> Linkedin

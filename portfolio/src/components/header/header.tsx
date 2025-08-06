@@ -1,21 +1,24 @@
+import './header.css';
 export default function Header() {
   return (
-    <header className="bg-gray-800 text-white p-4 flex gap-4 justify-between">
+    <header className="flex justify-between items-center p-4 text-white">
       <h1 className="text-2xl font-bold">@LuizBuarqueDev</h1>
-      <nav>
-        <ul>
+      <nav><i className="fa-solid fa-user"></i>
+
+        <ul className="flex gap-10 items-center">
           <li>
-            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/LuizBuarqueDev" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-github"></i> Github
             </a>
           </li>
-          <li>
-            <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">
+          <li><i className="fa-regular fa-user"></i>
+
+            <a href="https://www.linkedin.com/in/luiz-gabriel-buarque-vasconcelos-24074328b/" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin"></i> Linkedin
             </a>
           </li>
           <li>
-            <a href="mailto:seu@email.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:luizgabrielbuarque@gmail.com" target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-envelope"></i> E-mail
             </a>
           </li>

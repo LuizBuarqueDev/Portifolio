@@ -1,7 +1,8 @@
 export const Presentation = () => {
     return (
-        <section className="flex p-8">
-            <div>
+        <section className="flex flex-col lg:flex-row p-8">
+           <div className="md:flex-1">
+
                 <p className="flex text-3xl font-bold pl-8">Olá meu nome é Luiz Gabriel</p>
                 <h1 className="text-8xl font-bold text-center m-8">
                     Full Stack
@@ -30,7 +31,7 @@ export const Presentation = () => {
             </div>
 
 
-            <aside className="m-10 [&_p]:mb-4">
+              <aside className="md:flex-1 m-10 [&_p]:mb-4">
                 <p>
                     Olá, meu nome é Luiz Gabriel, tenho 21 anos e este é meu repositório pessoal. Sou um desenvolvedor apaixonado
                     por tecnologia, com foco em desenvolvimento full stack, embora tenha uma forte preferência e maior experiência

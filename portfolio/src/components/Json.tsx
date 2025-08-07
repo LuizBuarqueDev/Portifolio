@@ -48,7 +48,6 @@ export const Json = async () => {
         criado_em: repo.created_at,
         atualizado_em: repo.updated_at,
         url: repo.html_url,
-        licenca: repo.license ? repo.license.name : null,
         total_commits: totalCommits,
     };
 

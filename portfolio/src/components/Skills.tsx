@@ -93,7 +93,9 @@ export const Skills = () => {
                 </div>
 
                 <div className="border-2 border-white rounded-lg m-4 text-center p-8 w-60">
-                    <i className="fa-solid fa-code"></i>
+                    <i className="justify-center flex">
+                        <img src="\c++-icon.svg" alt="Ícone Flask" />
+                    </i>
                     <h5>C++</h5>
                     <p>C++ é uma linguagem de programação poderosa e eficiente, amplamente usada para desenvolvimento de sistemas, jogos e aplicações de alto desempenho.</p>
                 </div>

@@ -5,7 +5,7 @@ import { Json } from "@/components/Json";
 
 export default function Home() {
   return (
-    <div className="bg-img-section">
+    <div>
       <main className="main">
         <Presentation />
         <Json />

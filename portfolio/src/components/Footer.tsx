@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <footer className="flex justify-center items-center p-4 text-white">
+        <footer className="flex justify-center items-center p-4 text-white bg-[var(--color-2)]">
             <div className="text-center mx-auto">
                 <ul className="list-none flex justify-center mb-3 [&_li]:transition-transform [&_li]:hover:scale-110">
                     <li className="mx-3">

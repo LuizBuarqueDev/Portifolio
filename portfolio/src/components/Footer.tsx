@@ -2,7 +2,7 @@ export const Footer = () => {
     return (
         <footer className="flex justify-center items-center p-4 text-white bg-[var(--color-2)]">
             <div className="text-center mx-auto">
-                <ul className="list-none flex justify-center mb-3 [&_li]:transition-transform [&_li]:hover:scale-110">
+                <ul className="list-none flex justify-center mb-4 mt-4 [&_li]:transition-transform [&_li]:hover:scale-110">
                     <li className="mx-3">
                         <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
                             <i className="fa-brands fa-facebook"></i>
@@ -25,7 +25,7 @@ export const Footer = () => {
                     </li>
                 </ul>
 
-                <div>
+                <div className="[&_div]:mb-6">
                     <div>
                         Email:{" "}
                         <a href="mailto:luizgabrielbuarque@gmail.com">

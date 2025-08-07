@@ -4,7 +4,7 @@ export const Presentation = () => {
            <div className="md:flex-1">
 
                 <p className="flex text-3xl font-bold pl-8">Olá meu nome é Luiz Gabriel</p>
-                <h1 className="text-8xl font-bold text-center m-8">
+                <h1 className="text-center m-8">
                     Full Stack
                     <br />
                     Developer

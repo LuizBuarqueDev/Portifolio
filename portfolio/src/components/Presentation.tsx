@@ -29,6 +29,7 @@ export const Presentation = () => {
                 </ul>
             </div>
 
+
             <aside className="m-10 [&_p]:mb-4">
                 <p>
                     Olá, meu nome é Luiz Gabriel, tenho 21 anos e este é meu repositório pessoal. Sou um desenvolvedor apaixonado

@@ -1,5 +1,6 @@
 import { ProjectCards } from "@/components/ProjectCards";
 import { Presentation } from "@/components/Presentation";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="">
         <Presentation />
         <ProjectCards />
+        <Skills/>
       </main>
     </div>
   );

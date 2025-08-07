@@ -8,8 +8,26 @@
 
 body {
     background-color: var(--color-1);
+    color: white;
 }
 
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
 .bg-img-section {
   background-image: url('../../../public/imgs/STScI-01H1Q2VFHVMAJGH4WRNMK0DY2.png');

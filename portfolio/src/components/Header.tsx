@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
-    <header className="flex justify-between items-center p-4 text-white">
-      <h1 className="text-2xl font-bold">@LuizBuarqueDev</h1>
+    <header className="flex justify-between items-center p-4">
+      <h2 className="text-2xl font-bold">@LuizBuarqueDev</h2>
       <nav>
         <ul className="flex gap-10 items-center [&_li]:transition-transform [&_li]:hover:scale-110 [&_li]:hover:border-b-2 [&_li]:hover:border-white">
           <li>

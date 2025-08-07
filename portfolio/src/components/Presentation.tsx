@@ -1,6 +1,6 @@
 export const Presentation = () => {
     return (
-        <section className="relative flex p-8 text-white">
+        <section className="relative flex p-8">
             <div>
                 <p className="flex text-3xl font-bold pl-8">Olá meu nome é Luiz Gabriel</p>
                 <h1 className="text-8xl font-bold text-center m-8">

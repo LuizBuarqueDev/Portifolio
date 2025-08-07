@@ -5,7 +5,7 @@ import { Skills } from "@/components/Skills";
 export default function Home() {
   return (
     <div className="bg-img-section">
-      <main className="">
+      <main className="main">
         <Presentation />
         <ProjectCards />
         <Skills/>

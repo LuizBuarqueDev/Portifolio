@@ -13,16 +13,16 @@ export const CertificateCard = ({ certificate }: CertificateProps) => {
             href={certificate.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-64 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            className="w-80 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
         >
-            <img
-                src={certificate.preview}
-                alt={`Preview do certificado ${certificate.title}`}
-                className="w-full h-40 object-cover"
-            />
+            <iframe
+                src={`https://docs.google.com/viewer?url=${encodeURIComponent(
+                    certificate.preview
+                )}&embedded=true`}
+                className="w-full h-60"
+            ></iframe>
             <div className="p-4">
                 <h5 className="text-lg font-semibold text-amber-500">{certificate.title}</h5>
-                <p className="text-sm text-gray-500">{new Date(certificate.date).toLocaleDateString()}</p>
             </div>
         </a>
     );

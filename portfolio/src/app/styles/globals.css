@@ -11,6 +11,11 @@ body {
     color: white;
 }
 
+iframe {
+  pointer-events: none;
+}
+
+
 h1 {
     font-size: 6rem;
     font-weight: bold;

@@ -69,11 +69,12 @@ export default async function CertificatesPage() {
 
     return (
         <div className="flex flex-col items-center min-h-screen m-6 py-16 px-4">
-            <h1 className="mb-12 tracking-tight">
+            <h2 className="mb-12 tracking-tight">
                 Certificados
-            </h1>
+            </h2>
 
-            <div className="w-full  p-8 rounded-2xl shadow-xl border border-gray-200">
+            <div className="w-full p-8 rounded-2xl shadow-xl border border-gray-200 backdrop-blur-sm">
+
                 {certificates.length === 0 ? (
                     <p className="text-gray-400 text-center text-lg mt-20">
                         Nenhum certificado encontrado.

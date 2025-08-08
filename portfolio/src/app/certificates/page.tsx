@@ -68,20 +68,24 @@ export default async function CertificatesPage() {
     certificates.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return (
-        <div className="flex flex-col items-center min-h-screen p-10">
-            <h1 className="text-4xl font-bold mb-6">Certificados</h1>
+        <div className="flex flex-col items-center min-h-screen m-6 py-16 px-4">
+            <h1 className="mb-12 tracking-tight">
+                Certificados
+            </h1>
 
-            {certificates.length === 0 ? (
-                <p className="text-gray-500 text-center mt-10">
-                    Nenhum certificado encontrado.
-                </p>
-            ) : (
-                <section className="flex flex-wrap justify-center gap-6">
-                    {certificates.map((certificate, index) => (
-                        <CertificateCard key={index} certificate={certificate} />
-                    ))}
-                </section>
-            )}
+            <div className="w-full  p-8 rounded-2xl shadow-xl border border-gray-200">
+                {certificates.length === 0 ? (
+                    <p className="text-gray-400 text-center text-lg mt-20">
+                        Nenhum certificado encontrado.
+                    </p>
+                ) : (
+                    <section className="flex flex-wrap justify-center gap-8">
+                        {certificates.map((certificate, index) => (
+                            <CertificateCard key={index} certificate={certificate} />
+                        ))}
+                    </section>
+                )}
+            </div>
         </div>
     );
 }

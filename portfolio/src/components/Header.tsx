@@ -2,10 +2,14 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="flex justify-between items-center p-4">
-      <Link href={"/"} className="flex items-center gap-2">
-        <h3 className="hidden sm:inline">@LuizBuarqueDev</h3>
-      </Link>
+<header className="flex justify-between items-center p-4">
+  <Link href={"/"} className="flex items-center gap-2">
+<i className="fa-solid fa-house text-xl !block sm:!hidden"></i>
+<h3 className="hidden sm:!block">@LuizBuarqueDev</h3>
+  </Link>
+
+
+
       <nav>
         <ul className="flex gap-10 items-center [&_i]:text-2xl [&_li]:transition-transform [&_li]:hover:scale-110 [&_li]:hover:border-b-2 [&_li]:hover:border-white">
           <li>

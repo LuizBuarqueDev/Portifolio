@@ -13,7 +13,7 @@ export const CertificateCard = ({ certificate }: CertificateProps) => {
             href={certificate.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-80 bg-[var(--color-4)] rounded-lg shadow-md overflow-hidden border-gray-200 border"
+            className="w-75 bg-[var(--color-4)] rounded-lg shadow-md overflow-hidden border-gray-200 border"
         >
             
             <iframe

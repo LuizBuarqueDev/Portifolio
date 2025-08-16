@@ -1,4 +1,5 @@
 import { CertificateCard } from "@/components/CertificateCard";
+import { Pagination } from "@/components/Pagination";
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
@@ -11,7 +12,6 @@ const owner = "LuizBuarqueDev";
 const repo = "Meus-certificados";
 const basePath = "";
 
-// 🔁 Função recursiva segura para buscar PDFs
 async function fetchAllPdfs(path: string): Promise<any[]> {
     try {
         const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
@@ -87,6 +87,8 @@ export default async function CertificatesPage() {
                     </section>
                 )}
             </div>
+
+            <Pagination/>
         </div>
     );
 }

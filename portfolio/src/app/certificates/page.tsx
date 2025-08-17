@@ -27,7 +27,7 @@ export default async function CertificatesPage() {
 
     return (
         <div className="flex flex-col items-center min-h-screen m-6 py-16 px-4">
-            <h2 className="mb-12 tracking-tight">Certificados</h2>
+            <h2 className="mb-12">Certificados</h2>
             <CertificatesList certificates={certificates} />
         </div>
     );

@@ -38,11 +38,13 @@ export const CertificatesList = ({ certificates }: CertificatesListProps) => {
                 </section>
             )}
 
-            <Pagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={setCurrentPage}
-            />
+            <div className="flex justify-center mt-8">
+                <Pagination
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    onPageChange={setCurrentPage}
+                />
+            </div>
         </div>
     );
 };

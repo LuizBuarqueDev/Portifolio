@@ -20,7 +20,7 @@ export const Pagination = ({ currentPage, totalPages, onPageChange }: Pagination
     };
 
     return (
-        <div className="flex space-x-2 m-5 ml-auto">
+        <div className="flex space-x-2 m-5">
             <button onClick={handlerClickFirstPage} disabled={currentPage === 1}
                 className="rounded-full border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg hover:text-white hover:bg-slate-800">
                 <i className="fa-solid fa-arrow-left"></i>

@@ -1,48 +1,6 @@
-import { CertificateCard } from "@/components/CertificateCard";
+import { fetchAllPdfs, owner, repo, basePath, headers } from "@/services/githubService";
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-
-const headers = {
-    Authorization: `Bearer ${GITHUB_TOKEN}`,
-    Accept: "application/vnd.github.v3+json",
-};
-
-const owner = "LuizBuarqueDev";
-const repo = "Meus-certificados";
-const basePath = "";
-
-// 🔁 Função recursiva segura para buscar PDFs
-async function fetchAllPdfs(path: string): Promise<any[]> {
-    try {
-        const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-            headers,
-            next: { revalidate: 3600 },
-        });
-
-        const items = await res.json();
-
-        if (!Array.isArray(items)) {
-            console.error("Resposta inesperada da API:", items);
-            return [];
-        }
-
-        const pdfs: any[] = [];
-
-        for (const item of items) {
-            if (item.type === "file" && item.name.endsWith(".pdf")) {
-                pdfs.push(item);
-            } else if (item.type === "dir") {
-                const subPdfs = await fetchAllPdfs(item.path);
-                pdfs.push(...subPdfs);
-            }
-        }
-
-        return pdfs;
-    } catch (error) {
-        console.error("Erro ao buscar arquivos:", error);
-        return [];
-    }
-}
+import { CertificatesList } from "@/components/CertificatesList";
 
 export default async function CertificatesPage() {
     const pdfs = await fetchAllPdfs(basePath);
@@ -69,24 +27,8 @@ export default async function CertificatesPage() {
 
     return (
         <div className="flex flex-col items-center min-h-screen m-6 py-16 px-4">
-            <h2 className="mb-12 tracking-tight">
-                Certificados
-            </h2>
-
-            <div className="w-full p-8 rounded-2xl shadow-xl border border-gray-200 backdrop-blur-sm">
-
-                {certificates.length === 0 ? (
-                    <p className="text-gray-400 text-center text-lg mt-20">
-                        Nenhum certificado encontrado.
-                    </p>
-                ) : (
-                    <section className="flex flex-wrap justify-center gap-8">
-                        {certificates.map((certificate, index) => (
-                            <CertificateCard key={index} certificate={certificate} />
-                        ))}
-                    </section>
-                )}
-            </div>
+            <h2 className="mb-12">Certificados</h2>
+            <CertificatesList certificates={certificates} />
         </div>
     );
 }
